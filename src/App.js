@@ -20,7 +20,6 @@ function App() {
       .then(itemData => {
         setData(itemData)
         setQuery('')
-        console.log('called')
       })
     }
   }
