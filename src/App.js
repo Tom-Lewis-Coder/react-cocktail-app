@@ -24,8 +24,6 @@ function App() {
     }
   }
 
-  console.log(data)
-
   const handleChange = e => {
     setQuery(e.target.value)
   }

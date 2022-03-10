@@ -1,14 +1,19 @@
 import React from 'react'
 
 function DisplayItem({ drink }) {
-    const ingredients = [...Array(16).keys()].slice(1).map(el => drink['strIngredient' + el] && drink['strIngredient' + el] + ': ' + drink['strMeasure' + el] + ', ' )
-    console.log(ingredients)
+  let index = 1
+  const ingredients = []
+  while (drink['strIngredient' + index]) { 
+    ingredients.push(drink['strIngredient' + index] + ': ', drink['strMeasure' + index] ? drink['strMeasure' + index] : 'dash ' ) 
+  index++
+}
   return (
     <div className='displayItem'>
         <div id='drinkName'>{drink.strDrink}</div>
-        <div id='drinkGlass'>{drink.strGlass}</div>
-        <div id='drinkIngredients'>{ingredients}</div>
-        <div id='drinkMethod'>{drink.strInstructions}</div>
+        <div id='drinkType'>{drink.strAlcoholic + ' ' + drink.strCategory}</div>
+        <div id='drinkGlass'>Serve in a {drink.strGlass}</div>
+        <div id='drinkIngredients'>Ingredients - {ingredients}</div>
+        <div id='drinkMethod'>Method - {drink.strInstructions}</div>
         <img src={drink.strDrinkThumb} alt='img'/>
     </div>
   )
