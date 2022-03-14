@@ -2,11 +2,12 @@ import React from 'react'
 
 function DisplayItem({ drink }) {
   let index = 1
-  const ingredients = []
+  let ingredients = []
   while (drink['strIngredient' + index]) { 
-    ingredients.push(drink['strIngredient' + index] + ': ', drink['strMeasure' + index] ? drink['strMeasure' + index] : 'dash ' ) 
+    ingredients.push(drink['strIngredient' + index] + ': ', drink['strMeasure' + index] ? drink['strMeasure' + index] + '. ' : 'Dash' ) 
   index++
 }
+
   return (
     <div className='displayItem'>
         <div id='drinkName'>{drink.strDrink}</div>
