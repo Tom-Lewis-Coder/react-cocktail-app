@@ -30,9 +30,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header title='Cocktail Recipes'/>
+      <Header title='The Cocktail App'/>
       <SearchBar 
-        description='Search name and press enter'
+        description='Type drink name and press enter'
         loadItem={search} 
         value={query}
         handleChange={handleChange}

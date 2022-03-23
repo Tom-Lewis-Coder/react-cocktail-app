@@ -3,9 +3,10 @@ import React from 'react'
 function SearchBar({ description, value, handleChange, loadItem }) {
   return (
     <div className='search-bar'>
-        <div>{description}</div>
+        <div className='sb-description'>{description}</div>
         <input
             name='searchBar'
+            id='sb-input'
             type='text'
             placeholder='Search...'
             value={value}

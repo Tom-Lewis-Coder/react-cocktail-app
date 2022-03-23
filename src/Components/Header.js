@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header({ title }) {
   return (
-    <div>{ title }</div>
+    <div className='title'>{ title }</div>
   )
 }
 

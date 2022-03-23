@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: xx-large;
+  color: rgba(253, 1, 119, 0.945);
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.search-bar {
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  font-style: italic;
+  color: rgba(253, 1, 119, 0.945);
+}
+
+#sb-input {
+  box-shadow: 2px 3px 28px 1px rgba(0,0,0,0.1);
+  box-shadow: -2px 2px 4px 1px rgba(0,0,0,0.1);
+  border: 1px solid transparent;    
+  padding: 0.5rem;
+}
+
+.sb-description {
+  margin: 1rem;
+}
