@@ -10,12 +10,16 @@ function DisplayItem({ drink }) {
 
   return (
     <div className='displayItem'>
+      <div className='drink-text'>
         <div id='drinkName'>{drink.strDrink}</div>
         <div id='drinkType'>{drink.strAlcoholic + ' ' + drink.strCategory}</div>
-        <div id='drinkGlass'>Serve in a {drink.strGlass}</div>
-        <div id='drinkIngredients'>Ingredients - {ingredients}</div>
+        <div id='drinkGlass'>Serve in a {drink.strGlass}</div><br />
+        <div id='drinkIngredients'>Ingredients - {ingredients}</div><br />
         <div id='drinkMethod'>Method - {drink.strInstructions}</div>
+      </div> 
+      <div className='drink-img'>
         <img src={drink.strDrinkThumb} alt='img'/>
+       </div> 
     </div>
   )
 }
