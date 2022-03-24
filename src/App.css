@@ -19,8 +19,7 @@
 }
 
 #sb-input {
-  /* box-shadow: 2px 3px 28px 1px rgba(0,0,0,0.1); */
-  box-shadow: -2px 2px 4px 1px rgba(0,0,0,0.1);
+  box-shadow: -2px 2px 4px 1px rgba(0,0,0,0.5);
   border: 1px solid transparent;    
   padding: 0.5rem;
 }
@@ -43,28 +42,31 @@
   font-family: 'Open Sans', sans-serif;
   font-size: large;
   color: rgba(253, 1, 119, 0.945);
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
   width: 90%;
   height:90%;
 }
 
 img {
-  height: 90%;
-  width: 90%;
+  max-height: 90%;
+  max-width: 90%;
   object-fit: contain;
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  box-shadow: -2px 2px 4px 1px rgba(0,0,0,0.6);
  }
 
  #drinkName{
-   font-weight: bold;
+   font-weight: bolder;
  }
 
  #drinkType {
   font-style: italic;
+  margin-top: 0.5rem;
  }
 
  #drinkGlass {
    font-size: medium;
+   margin-top: 0.5rem;
  }
 
 
