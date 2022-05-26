@@ -1,11 +1,13 @@
 import React from 'react'
 
 function DisplayItem({ drink }) {
+  console.log(drink)
   let index = 1
   let ingredients = []
   while (drink['strIngredient' + index]) { 
     ingredients.push(drink['strIngredient' + index] + ': ', drink['strMeasure' + index] ? drink['strMeasure' + index] + '. ' : 'Dash' ) 
   index++
+  console.log(ingredients)
 }
 
   return (
@@ -18,7 +20,7 @@ function DisplayItem({ drink }) {
         <div id='drinkMethod'>Method - {drink.strInstructions}</div>
       </div> 
       <div className='drink-img'>
-        <img src={drink.strDrinkThumb} alt='img'/>
+        <img src={drink.strDrinkThumb} alt='finished drink'/>
        </div> 
     </div>
   )
