@@ -4,7 +4,7 @@ import DisplayItem from './DisplayItem'
 function DisplayList({ drinks }) {
   return (
     <div className='displayList'>
-      <div>{ drinks && drinks.map((drink, index) => <DisplayItem key={index} drink={drink} />) }</div>
+      <div>{ drinks && drinks.map((drink) => <DisplayItem key={drink.idDrink} drink={drink} />) }</div>
     </div>
   )
 }

@@ -18,7 +18,7 @@ function App() {
       fetch(`${api.base}s=${query}&api_key=${api.key}`)
       .then(resp => resp.json())
       .then(itemData => {
-        setData(itemData)
+        itemData.drinks === null ? alert('Sorry, cocktail not found. Please check spelling') : setData(itemData)
         setQuery('')
       })
     }
