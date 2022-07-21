@@ -6,4 +6,4 @@ This is a responsive application that provides users with access to cocktail rec
 
 ## Technologies
 
-This web application was bult with ReactJS/CSS and the CocktailDB API.
+This web application was built with ReactJS/CSS and the CocktailDB API.
