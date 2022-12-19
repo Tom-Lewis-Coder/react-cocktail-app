@@ -24,12 +24,16 @@
   color: rgba(253, 1, 119, 0.945);
 }
 
-#sb-input {
+.sb-input {
   width: 14rem;
-  box-shadow: -0.15rem 0.15rem 0.3rem 0.08rem rgba(0,0,0,0.5);
-  border: 1px solid transparent;    
+  box-shadow: -0.12rem 0.12rem 0.24rem 0.065rem rgba(0,0,0,0.5);  
   padding: 0.5rem;
   outline: none;
+  margin-top: 0.6rem;
+}
+
+input[type=text] {
+  border: 1px solid white;
 }
 
 .sb-description {

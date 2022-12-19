@@ -6,7 +6,7 @@ function SearchBar({ description, value, handleChange, loadItem }) {
         <div className='sb-description'>{description}</div>
         <input
             name='searchBar'
-            id='sb-input'
+            className='sb-input'
             type='text'
             placeholder='Search...'
             value={value}

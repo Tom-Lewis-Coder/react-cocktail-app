@@ -25,7 +25,8 @@ function App() {
   }
 
   const handleChange = e => {
-    setQuery(e.target.value)
+    let val = e.target.value.trim()
+    setQuery(val)
   }
 
   return (
