@@ -99,11 +99,17 @@ img {
   }
 
   img {
+    max-height: 40%;
+    max-width: 40%;
+  }
+ }
+
+ @media only screen and (max-width: 600px) {
+  img {
     max-height: 50%;
     max-width: 50%;
   }
  }
-
 
  @media only screen and (max-width: 400px){
   .displayItem {
