@@ -15,7 +15,7 @@ function App() {
 
   const search = (evt) => {
     if (evt.key === 'Enter') {
-      fetch(`${api.base}s=${query}&api_key=${api.key}`)
+      fetch(`${api.base}s=${query.trim()}&api_key=${api.key}`)
       .then(resp => resp.json())
       .then(itemData => {
         itemData.drinks === null ? alert('Sorry, cocktail not found. Please check spelling') : setData(itemData)
@@ -25,7 +25,7 @@ function App() {
   }
 
   const handleChange = e => {
-    let val = e.target.value.trim()
+    let val = e.target.value
     setQuery(val)
   }
 
