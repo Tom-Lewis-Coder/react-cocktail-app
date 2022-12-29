@@ -66,7 +66,7 @@ input[type=text] {
   white-space: pre-line;
 }
 
-#ingredients, #method {
+.displayTitle {
   font-weight: bold;
   text-decoration: underline;
 }
@@ -76,12 +76,8 @@ img {
   max-width: 80%;
   padding: 1rem;
   box-shadow: -0.16rem 0.16rem 0.3rem 0.08rem rgba(0,0,0,0.6);
+  margin-right: 50px;
 }
-
- #drinkName{
-   font-weight: bolder;
-   text-decoration: underline;
- }
 
  #drinkType {
   font-style: italic;
@@ -110,6 +106,7 @@ img {
   img {
     max-height: 40%;
     max-width: 40%;
+    margin: 0;
   }
  }
 

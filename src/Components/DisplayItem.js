@@ -11,12 +11,12 @@ function DisplayItem({ drink }) {
   return (
     <div className='displayItem'>
       <div className='drink-text'>
-        <div id='drinkName'>{drink.strDrink}</div>
+        <div className='displayTitle'>{drink.strDrink}</div>
         <div id='drinkType'>{drink.strAlcoholic + ' ' + drink.strCategory}</div>
         <div id='drinkGlass'>Serve in a {drink.strGlass}</div><br />
-        <div id='ingredients'>Ingredients</div><br />
+        <div className='displayTitle'>Ingredients</div><br />
         <div id='drinkIngredients'>{ingredients}</div><br />
-        <div id='method'>Method</div><br />
+        <div className='displayTitle'>Method</div><br />
         <div id='drinkMethod'>{drink.strInstructions}</div>
       </div> 
       <div className='drink-img'>
