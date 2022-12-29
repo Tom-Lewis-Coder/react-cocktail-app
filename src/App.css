@@ -56,10 +56,19 @@ input[type=text] {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   color: rgba(253, 1, 119, 0.945);
-  padding: 0 2rem 4rem 2rem;
+  padding: 0 2rem 0 2rem;
   width: 80%;
   height: 80%;
   margin-left: 30px;
+}
+
+#drinkIngredients {
+  white-space: pre-line;
+}
+
+#ingredients, #method {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 img {
@@ -76,12 +85,12 @@ img {
 
  #drinkType {
   font-style: italic;
-  margin-top: 0.5rem;
+  margin-top: 0.85rem;
  }
 
  #drinkGlass {
    font-size: medium;
-   margin-top: 0.5rem;
+   margin-top: 0.25rem;
  }
 
  @media only screen and (max-width: 770px) {

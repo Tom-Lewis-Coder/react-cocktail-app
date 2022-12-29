@@ -4,7 +4,7 @@ function DisplayItem({ drink }) {
   let index = 1
   let ingredients = []
   while (drink['strIngredient' + index]) { 
-    ingredients.push(drink['strIngredient' + index] + ': ', drink['strMeasure' + index] ? drink['strMeasure' + index] + '. ' : 'Dash' ) 
+    ingredients.push(`${drink['strIngredient' + index]}: ${drink['strMeasure' + index] ? drink['strMeasure' + index].trim() + '\n' : 'Dash'}`)
   index++
 }
 
@@ -14,8 +14,10 @@ function DisplayItem({ drink }) {
         <div id='drinkName'>{drink.strDrink}</div>
         <div id='drinkType'>{drink.strAlcoholic + ' ' + drink.strCategory}</div>
         <div id='drinkGlass'>Serve in a {drink.strGlass}</div><br />
-        <div id='drinkIngredients'>Ingredients - {ingredients}</div><br />
-        <div id='drinkMethod'>Method - {drink.strInstructions}</div>
+        <div id='ingredients'>Ingredients</div><br />
+        <div id='drinkIngredients'>{ingredients}</div><br />
+        <div id='method'>Method</div><br />
+        <div id='drinkMethod'>{drink.strInstructions}</div>
       </div> 
       <div className='drink-img'>
         <img src={drink.strDrinkThumb} alt='finished drink'/>
